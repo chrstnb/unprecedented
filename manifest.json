@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Unprecedential",
+    "description": "Turns any occurence of 'President Trump' into 'Precedent Trump'",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
